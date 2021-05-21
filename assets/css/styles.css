@@ -317,9 +317,11 @@ a{
 .mainOne {
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
 } 
 .deal_layout {
   display: flex;
+  flex-direction: row;
 } 
 .dealMenu {
   background: var(--grayLight-color);
@@ -593,4 +595,68 @@ span.rol {
 }
 .btn_outline img{
   margin: -3px 7px;
+}
+/* On screens that are 992px or less, set the background color to blue */
+@media screen and (max-width: 992px) {
+  
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+  body{
+    padding: 1rem 0px 0 2.75rem;
+  }
+  .select__area{
+    display:none;
+  }
+  .l-navbar{
+    width:60px;
+    padding: 10px;
+    top: 70px;
+  }
+  .nav__link img {
+    width: 20px;
+}
+.mainOne{
+  flex-direction: column;
+}
+.deal_layout { 
+  flex-direction: column;
+}
+.btn_deal_layout {
+  display: grid;
+}
+.btnDeal{
+  margin:5px 0;
+}
+.btnDeal_hide { 
+  margin: 0px auto;
+}
+.chevronlabel{
+  width: 100%;
+  padding: 10px;
+  margin: 2px 0;
+}
+.chevronlabelOne {
+  margin:0;
+}
+.chevronlabel:after{
+  border-style:none;
+  position: relative;
+}
+.chevronlabelThree{
+  margin:0;
+}
+.chevronlabel:before{
+  position: fixed;
+}
+.main_section{
+  padding: 10px;
+}
+.ful_dashboard{
+  padding: 0;
+}
+.btn_outline{
+  margin:5px;
+}
 }
