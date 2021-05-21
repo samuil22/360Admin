@@ -36,6 +36,28 @@
   /*===== z index =====*/
   --z-fixed: 100;
 } 
+/* scroll bar */
+/* width */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image:  linear-gradient(to bottom, #133159 0%,#133159  100%);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ background-image:  linear-gradient(to bottom, #133159 0%, #133159 100%);
+}
 /*===== input field placeholder =====*/
 ::placeholder {
   color: var(--grayDark-color);
@@ -177,6 +199,9 @@ a{
   margin-top: 5px;
 }
 /*===== l SIDE NAV =====*/
+.nav__link img {
+  width: 25px;
+}
 .l-navbar{
   position: absolute;
   top: 30px;
