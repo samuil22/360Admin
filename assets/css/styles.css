@@ -1,0 +1,335 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+/*===== VARIABLES CSS =====*/
+:root{
+  --nav-width: 92px;
+
+  /*===== Colores =====*/
+  --first-color: #3C7EF3;
+  --bg-color: #133159;
+  --darkText--color:#333333;
+
+  --lightGreen-color: #68EBCA;
+  --sub-color: #B6CEFC;
+  --white-color: #FFF;
+  --gray-color: #E5E8EF;
+  --grayLight-color: #F6F7FB;
+  --grayDark-color: #546376;
+  --red-color:#FF264A; 
+  
+  /*===== Fuente y tipografia =====*/
+  --body-font: 'Poppins', sans-serif; 
+  --small-font-size: 16px;     
+  --header1-font-size:96px; 
+  --header2-font-size:60px; 
+  --header3-font-size:48px; 
+  --header4-font-size:32px; 
+  --header5-font-size:24px; 
+  --header6-font-size:20px; 
+  --subtitle1-font-size:16px; 
+  --subtitle2-font-size:14px; 
+  --body1-font-size:16px; 
+  --body2-font-size:14px; 
+  --button-font-size:14px; 
+  /*===== z index =====*/
+  --z-fixed: 100;
+} 
+/*===== input field placeholder =====*/
+::placeholder {
+  color: var(--grayDark-color);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: var(--grayDark-color);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color: var(--grayDark-color);
+}
+/*===== BASE =====*/
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: 0;
+  padding: 2rem 0 0 6.75rem;
+  font-family: var(--body-font);
+  font-size: var(--small-font-size);
+  transition: .5s;
+  background:var(--gray-color)
+}
+h1{
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a{
+  text-decoration: none;
+} 
+/*===== TOP NAV =====*/
+.top__nav {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  z-index: 999;
+  top: 0;
+  background-color: var(--bg-color);
+}
+.top__nav_ber {
+  box-shadow: none;
+}
+.nav-wrapper{
+  padding:15px;
+}
+.brand-logo_img{
+  padding:0 15px;
+}
+.ser_input{
+  background-color:  var(--gray-color) !important;
+  height: 40px !important; 
+  border-radius: 10px !important;
+  box-shadow: inset -4px -4px 2px #FFFFFF, inset 4px 4px 2px rgba(8, 20, 36, 0.1) !important; 
+  padding: 0 0 0 5px !important;
+  margin: 0 !important;
+  width: 300px !important;
+}
+.top__search {
+  position: relative;
+}
+.ser__icon{
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: var(--bg-color);
+  right: 0;
+}
+.top__ul{
+  padding:5px;
+}
+.top__ul li{
+  float: left;
+}
+.ser__li{
+  margin-right: 50px;
+} 
+.top_li_icons{
+  display:flex;
+}
+.icon__top{
+  padding: 12px;
+}
+.ico_span{
+    background: var(--first-color);
+    height: 40px;
+    width: 40px;
+    display: grid;
+    border-radius: 50%;
+    margin: 0 10px;
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.16);
+}
+.ico_span:hover {
+  background: var(--lightGreen-color);
+}
+.top__notifi{
+  position: relative;
+}
+.badge_notifi {
+  position: absolute;
+  background: var(--red-color);
+  width: 13px;
+  height: 14px;
+  font-size: 10px;
+  padding: 0px 2px;
+  border-radius: 50px;
+  left: 30px;
+  top: 4px;
+  color: var(--white-color);
+  border: 0.5px solid var(--white-color);
+}
+.ad__span{
+  display:flex;
+} 
+.ad__img{
+  padding: 0px 15px;
+}
+.ad__p{
+  margin: 0;
+  font-size: 18px;
+  line-height: 19px;
+  color: var(--white-color);
+}
+.ad__p_span{
+  font-size: 12px;
+  line-height: 18px;
+}
+.ad_arrow_down{
+  color: var(--white-color);
+  margin-top: 5px;
+}
+/*===== l SIDE NAV =====*/
+.l-navbar{
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: var(--nav-width);
+  /* height: 150vh; */
+  background-color: var(--bg-color);
+  color: var(--white-color);
+  padding: 5.5rem 1.5rem 2rem;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+/*=====SIDE NAV =====*/
+.side__nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background-color: unset;
+  line-height: unset;
+  box-shadow: unset;
+}
+.nav__brand{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.nav__toggle{
+  font-size: 1.25rem;
+  padding: .75rem;
+  cursor: pointer;
+}
+
+
+.nav__link{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: .75rem;
+  padding: .75rem;
+  color: var(--white-color);
+  border-radius: .5rem;
+  margin-bottom: 1rem;
+  transition: .3s;
+  cursor: pointer;
+}
+.nav__link:hover{
+  background-color: var(--first-color);
+} 
+.nav__name{
+  font-size: var(--small-font-size);
+}
+
+/*Expander menu*/
+.expander{
+  width: calc(var(--nav-width) + 9.75rem);
+}
+
+/*Add padding body*/
+.body-pd{
+  padding: 2rem 0 0 16rem;
+}
+
+/*Active links menu*/
+.active{
+  background-color: var(--first-color);
+}
+
+/*===== COLLAPSE =====*/
+.collapse{
+  grid-template-columns: 20px max-content 1fr;
+}
+.collapse__link{
+  justify-self: flex-end;
+  transition: .5s;
+}
+.collapse__menu{
+  display: none;
+  padding: .75rem 2.25rem;
+}
+.collapse__sublink{
+  color: var(--sub-color);
+  font-size: var(--small-font-size);
+}
+.collapse__sublink:hover{
+  color: var(--white-color);
+}
+
+/*Show collapse*/
+.showCollapse{
+  display: block;
+}
+
+/*Rotate icon*/
+.rotate{
+  transform: rotate(180deg);
+}
+/* main section */
+.main_section{
+  background:var(--white-color);
+  margin: 30px;
+  margin-top: 80px;
+  padding:20px;
+}
+.main__title{
+  font-size: var(--header5-font-size);
+  font-weight: 500;
+  color: var(--darkText--color); 
+}
+.mainOne {
+  display: flex;
+  justify-content: space-between;
+} 
+.deal_layout {
+  display: flex;
+} 
+.dealMenu {
+  background: var(--grayLight-color);
+  margin: 1px;
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+} 
+.dealMenu.icon_active {
+  background: var(--bg-color);
+}
+.dealMenu_icon {
+  padding: 12px;
+}
+.deal__btn_ico {
+  height: 26px;
+  width: 26px;
+  background: var(--white-color);
+  display: inline-block;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 8px 0px 0px;
+} 
+.deal__btn_ico img{
+  z-index: 1;
+  padding:2px;
+}
+.btnDeal {
+  background: var(--first-color);
+  padding: 8px;
+  border-radius: 5px;
+  display: inline-flex;
+  color: var(--white-color);
+  margin: 0 0 0 20px;
+}
+.btn_deal_layout {
+  display: -webkit-inline-box;
+}
+.btnDeal_hide {
+  display: flow-root;
+  margin: 0px 15px;
+}
