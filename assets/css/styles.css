@@ -659,4 +659,8 @@ span.rol {
 .btn_outline{
   margin:5px;
 }
+.full_card_layout2,.full_card_layout{
+  height:350px;
+  margin: 5px 0;
+}
 }
