@@ -345,6 +345,9 @@ a{
   padding: 5px;
   margin: 0 8px 0px 0px;
 } 
+.arrow__Deal{
+  color: #99A6B9;
+}
 .deal__btn_ico img{
   z-index: 1;
   padding:2px;
