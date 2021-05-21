@@ -663,4 +663,7 @@ span.rol {
   height:350px;
   margin: 5px 0;
 }
+.nav__brand {
+  display: none;
+}
 }
